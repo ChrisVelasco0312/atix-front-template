@@ -103,4 +103,3 @@ Husky is configured with pre-commit hooks that run:
 - Code formatting
 - Type checking
 - Tests
-
