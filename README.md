@@ -4,16 +4,16 @@ A modern React application built with Vite, TypeScript, and Tailwind CSS.
 
 ## Features
 
-- ⚡️ [Vite](https://vitejs.dev/) - Fast build tool and dev server
-- ⚛️ [React 19](https://react.dev/) - Latest React with concurrent features
-- 🔷 [TypeScript](https://www.typescriptlang.org/) - Type safety
-- 🎨 [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- 🧪 [Vitest](https://vitest.dev/) - Fast unit testing
-- 🧪 [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Testing utilities
-- 📝 [ESLint](https://eslint.org/) - Code linting
-- 💅 [Prettier](https://prettier.io/) - Code formatting
-- 🐕 [Husky](https://typicode.github.io/husky/) - Git hooks
-- 📚 [Ladle](https://ladle.dev/) - Storybook alternative
+- [Vite](https://vitejs.dev/) - Fast build tool and dev server
+- [React 19](https://react.dev/) - Latest React with concurrent features
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Vitest](https://vitest.dev/) - Fast unit testing
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Testing utilities
+- [ESLint](https://eslint.org/) - Code linting
+- [Prettier](https://prettier.io/) - Code formatting
+- [Husky](https://typicode.github.io/husky/) - Git hooks
+- [Ladle](https://ladle.dev/) - Storybook alternative
 
 ## Getting Started
 
@@ -83,18 +83,6 @@ pnpm validate
 pnpm ladle
 ```
 
-## Project Structure
-
-```
-src/
-├── components/     # Reusable components
-├── test/          # Test setup files
-├── App.tsx        # Main app component
-├── App.css        # App-specific styles
-├── main.tsx       # App entry point
-└── index.css      # Global styles with Tailwind
-```
-
 ## Available Scripts
 
 - `dev` - Start development server
@@ -116,13 +104,3 @@ Husky is configured with pre-commit hooks that run:
 - Type checking
 - Tests
 
-## Migration from Next.js
-
-This project was migrated from Next.js to Vite React. The following configurations were preserved:
-
-- ESLint and Prettier configuration
-- Tailwind CSS setup
-- Vitest and React Testing Library
-- Husky git hooks
-- pnpm package manager
-- TypeScript configuration (updated for Vite)
