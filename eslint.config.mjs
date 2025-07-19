@@ -3,9 +3,18 @@ import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
 import eslintConfigPrettier from "eslint-config-prettier";
-import nextPlugin from "@next/eslint-plugin-next";
 
 export default [
+  { 
+    ignores: [
+      "node_modules/**",
+      "dist/**",
+      ".next/**",
+      "coverage/**",
+      "*.config.{js,ts,mjs}",
+      "vite.config.*"
+    ]
+  },
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
@@ -19,13 +28,7 @@ export default [
   },
   {
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
-    plugins: { 
-      "@next/next": nextPlugin,
-     },
     rules: {
-      ...nextPlugin.configs.recommended.rules,
-      ...nextPlugin.configs["core-web-vitals"].rules,
-      "@next/next/no-html-link-for-pages": "off",
       "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
       "no-unused-vars": "error",
