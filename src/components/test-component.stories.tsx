@@ -1,3 +1,3 @@
-import TestComponent from "./test-component";
+import TestComponent from './test-component';
 
 export const Default = () => <TestComponent />;
