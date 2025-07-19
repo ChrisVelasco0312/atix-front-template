@@ -1,13 +1,13 @@
-import { expect, test } from 'vitest';
-import { render, screen } from '@testing-library/react';
-import Page from '../page';
+import { expect, test } from "vitest";
+import { render, screen } from "@testing-library/react";
+import Page from "../page";
 
-test('Page', () => {
+test("Page", () => {
   render(<Page />);
   expect(
-    screen.getByRole('heading', {
+    screen.getByRole("heading", {
       level: 1,
-      name: 'ATIX FRONT TEMPLATE WITH NEXT',
+      name: "ATIX Front Template",
     }),
   ).toBeDefined();
 });
