@@ -4,10 +4,9 @@ import { isAuthenticated } from "@/utils/auth";
 export const Route = createFileRoute("/")({
   beforeLoad: async () => {
     if (!isAuthenticated()) {
-      throw redirect({to: "/login"})
+      throw redirect({ to: "/login" });
     } else {
-      throw redirect({to: "/dashboard"})
+      throw redirect({ to: "/dashboard" });
     }
   },
 });
-
